@@ -50,10 +50,10 @@ import tweepy
 #Must authenticate the user, cuz request comes from an actual twitter user
 
 #The below keys and secret keys can be found in the 'Developer Keys' Twitter section
-CONSUMER_KEY = 'qI1dr0dM0JXgw9POgXg0FYBpU'
-CONSUMER_SECRET = 'EynYc3o8Xt3tZmBeyqRW391VrFPla8wKa9jn7yIdLRDsfSh34Q'
-ACCESS_KEY = '1248874588282294272-pvZbSH9X5f1rwSUsziDkr1rwK0S9BY'
-ACCESS_SECRET = 'lcL9BfuEVojMRX5erggjhtSSqpEXgMejtx4VHBnqNS6N2'
+CONSUMER_KEY = 'sensitive'
+CONSUMER_SECRET = 'sensitive'
+ACCESS_KEY = 'sensitive'
+ACCESS_SECRET = 'sensitive'
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
