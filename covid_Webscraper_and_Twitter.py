@@ -15,9 +15,11 @@ print(soup.title.text)
 #I noticed that the countries all have this:
 #a class = "mt_a"
 content = soup.find_all("a", attrs={"class", "mt_a"})
-#scraping text
+#so we find the country row by using the above class attirbutes
 #if we go up a level from the country label i.e. find_parent. Then we find_siblings, 
-# we can get the total cases per 1m population for the countries we wanted
+# we can get the rest of the data for the country e.g. total cases per 1m population
+# The total cases per 1m population is the 8th item/column in that row
+
 
 countryData = {}
 
@@ -39,3 +41,31 @@ print(countryData)
 for country, data in countryData.items():
     print(f"{country} has {data} total cases per 1M population")
 
+
+#Write comments explaining above
+#Twitter API Output
+#Tweepy is like a python wrapper for the Twitter API
+#making it easier to interact w/ the Twitter API
+import tweepy
+#Must authenticate the user, cuz request comes from an actual twitter user
+
+#The below keys and secret keys can be found in the 'Developer Keys' Twitter section
+CONSUMER_KEY = 'qI1dr0dM0JXgw9POgXg0FYBpU'
+CONSUMER_SECRET = 'EynYc3o8Xt3tZmBeyqRW391VrFPla8wKa9jn7yIdLRDsfSh34Q'
+ACCESS_KEY = '1248874588282294272-pvZbSH9X5f1rwSUsziDkr1rwK0S9BY'
+ACCESS_SECRET = 'lcL9BfuEVojMRX5erggjhtSSqpEXgMejtx4VHBnqNS6N2'
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+api = tweepy.API(auth)
+
+
+for country, data in countryData.items():
+    print(f"{country} has {data} total cases per 1M population")
+    api.update_status((f"{country} has {data} total cases per 1M population"))
+
+
+#Using Pandas/Matplotlib
+
+#Decorators to measure time performance
+#Unit testing
