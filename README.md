@@ -2,4 +2,8 @@
 
 # ...
 
+<<<<<<< HEAD
 # new branch changes
+=======
+# master branch changes
+>>>>>>> master
