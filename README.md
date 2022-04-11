@@ -1,3 +1,1 @@
-# Scraping Coronavirus data using Beautiful Soup in Python and outputting using a Twitter API
-# ...
-
+# Scraping Coronavirus data using Beautiful Soup in Python and outputting country vs country comparisons using a Twitter API
