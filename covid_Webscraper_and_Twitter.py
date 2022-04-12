@@ -1,6 +1,18 @@
+#Decorators to measure time performance
+import time
+def timer_decorator(original_function):
+    def wrapper_function(*args, **kwargs):
+        start = time.time()
+        return_value = original_function(*args, **kwargs)
+        end = time.time()
+        print(f"Time taken: {end-start}")
+        return return_value
+    return wrapper_function
+
 import requests
 from bs4 import BeautifulSoup as bs
 
+@timer_decorator
 def get_covid_data_from_worldometer():
 
     url = "https://www.worldometers.info/coronavirus/"
@@ -73,12 +85,10 @@ def tweet(countryData):
     for country, data in countryData.items():
         api.update_status((f"{country} has {data} total cases per 1M population. Timestamp: {current_time}"))
 
-tweet(get_covid_data_from_worldometer())
-
 
 #TODO:Using Pandas/Matplotlib
 
-#Decorators to measure time performance
+tweet(get_covid_data_from_worldometer())
 
 
 
