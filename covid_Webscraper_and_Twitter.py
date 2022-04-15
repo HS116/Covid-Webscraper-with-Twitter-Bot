@@ -98,6 +98,7 @@ tweet(get_covid_data_from_worldometer())
 #TODO: Create a website with frontend and backend which stores/presents university memes 
 # and people can like/comment on each meme
 #automate downdloading pictures from Zulip PGDP Meme channel
+#automate instagram bot to download pictures from insta tummemes
 #build login/auth system maybe using Google OAuth
 
 
