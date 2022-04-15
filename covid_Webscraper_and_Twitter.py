@@ -86,9 +86,22 @@ def tweet(countryData):
         api.update_status((f"{country} has {data} total cases per 1M population. Timestamp: {current_time}"))
 
 
-#TODO:Using Pandas/Matplotlib
+#Create a similar web scrapping function but for a different website e.g. Indian covid website
+#because this website is interactive hence I can use Selenium
 
 tweet(get_covid_data_from_worldometer())
+
+#TODO:Using Pandas/Matplotlib/Plotly to present the data
+
+#TODO: Store the data in a json/csv file
+
+#TODO: Create a website with frontend and backend which stores/presents university memes 
+# and people can like/comment on each meme
+#automate downdloading pictures from Zulip PGDP Meme channel
+#build login/auth system maybe using Google OAuth
+
+
+
 
 
 
