@@ -1,16 +1,7 @@
-#Decorators to measure time performance
-import time
-def timer_decorator(original_function):
-    def wrapper_function(*args, **kwargs):
-        start = time.time()
-        return_value = original_function(*args, **kwargs)
-        end = time.time()
-        print(f"Time taken: {end-start}")
-        return return_value
-    return wrapper_function
-
 import requests
 from bs4 import BeautifulSoup as bs
+
+from timer_decorator import timer_decorator
 
 @timer_decorator
 def get_covid_data_from_worldometer():
@@ -57,39 +48,12 @@ def get_covid_data_from_worldometer():
 
     return countryData
 
-def tweet(countryData):
-    #Write comments explaining above
-    #Twitter API Output
-    #Tweepy is like a python wrapper for the Twitter API
-    #making it easier to interact w/ the Twitter API
-    import tweepy
-    #Must authenticate the user, cuz request comes from an actual twitter user
-
-    #The below keys and secret keys can be found in the 'Developer Keys' Twitter section
-    CONSUMER_KEY = ''
-    CONSUMER_SECRET = ''
-    ACCESS_KEY = ''
-    ACCESS_SECRET = ''
-
-    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-    auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-    api = tweepy.API(auth)
-
-    #Add a time stamp
-    from datetime import datetime
-
-    now = datetime.now()
-
-    current_time = now.strftime("%H:%M:%S")
-
-    for country, data in countryData.items():
-        api.update_status((f"{country} has {data} total cases per 1M population. Timestamp: {current_time}"))
 
 
 #Create a similar web scrapping function but for a different website e.g. Indian covid website
 #because this website is interactive hence I can use Selenium
 
-tweet(get_covid_data_from_worldometer())
+
 
 #TODO:Using Pandas/Matplotlib/Plotly to present the data
 

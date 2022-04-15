@@ -1,5 +1,5 @@
 import unittest
-import covid_Webscraper_and_Twitter as app
+import CountryCovidScraper as app
 
 class Tests(unittest.TestCase):
     #Unit tests for 12th April 10:48 PM
