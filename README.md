@@ -1,9 +1,9 @@
 # Scraping Coronavirus data using Beautiful Soup in Python and outputting country vs country comparisons using a Twitter API
 
-There are 3 components to this project:
+There are 3 components to this project:\
 
 ## 1.) Beautiful soup webscraper of country specific covid data
-Used Beautiful Soup to obtain information from (https://www.worldometers.info/coronavirus/) about the "Total cases per 1M Population" for the following countries: Hong Kong, Germany, India, USA
+Used Beautiful Soup to obtain information from (https://www.worldometers.info/coronavirus/) about the "Total cases per 1M Population" for the following countries: Hong Kong, Germany, India, USA\
 Searched for elements with the class attribute of "mt_a" as they represented the country names
 Filtered out the countries I was interested in, by looking at the .text attribute
 Used find_parent() to get the whole row data of the country, and used find_siblings() to get all statistics
