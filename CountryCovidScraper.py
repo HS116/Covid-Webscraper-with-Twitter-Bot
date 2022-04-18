@@ -50,10 +50,6 @@ def get_covid_data_from_worldometer():
 
 
 
-#Create a similar web scrapping function but for a different website e.g. Indian covid website
-#because this website is interactive hence I can use Selenium
-
-
 
 #TODO:Using Pandas/Matplotlib/Plotly to present the data
 
