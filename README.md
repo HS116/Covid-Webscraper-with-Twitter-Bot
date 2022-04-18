@@ -37,6 +37,6 @@ Applied some Python unit testing on 12th April 2022 for one of the data scraping
 https://twitter.com/LilRengsayeed
 
 ## Future plans for project:
-1.) Automate storing the data in a JSON or CSV
-2.) Automate the bot running in the background, so I don't have to press run
+1.) Automate storing the data in a JSON or CSV/
+2.) Automate the bot running in the background, so I don't have to press run/
 3.) Generate a plotly graph as well, and display this through the twitter update
