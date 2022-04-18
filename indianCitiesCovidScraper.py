@@ -16,7 +16,6 @@ def get_indian_cities_covidcases_data():
 
     driver.get(url)
     driver.implicitly_wait(3)
-    #Use the "full X-path" rather than the normal one, otherwise Selenium driver cannot find it
     #Click on the element to sort the states by alphabetical order
     driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[1]/div[1]').click()
     driver.implicitly_wait(1)

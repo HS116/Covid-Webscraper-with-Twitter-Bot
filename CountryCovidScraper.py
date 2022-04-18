@@ -12,19 +12,7 @@ def get_covid_data_from_worldometer():
     soup = bs(r.text, "html.parser")
     print(soup.title.text)
 
-    #Countries: Hong Kong, Germany, India, USA
-
-    # Focusing on Total cases per 1M Population
-
-    #Step 1.) Use Inspect Element and top left corner mouse button to find the attributes for the countries
-    #I noticed that the countries all have this:
-    #a class = "mt_a"
     content = soup.find_all("a", attrs={"class", "mt_a"})
-    #so we find the country row by using the above class attirbutes
-    #if we go up a level from the country label i.e. find_parent. Then we find_siblings, 
-    # we can get the rest of the data for the country e.g. total cases per 1m population
-    # The total cases per 1m population is the 8th item/column in that row
-
 
     countryData = {}
 
@@ -59,6 +47,7 @@ def get_covid_data_from_worldometer():
 # and people can like/comment on each meme
 #automate downdloading pictures from Zulip PGDP Meme channel
 #automate instagram bot to download pictures from insta tummemes
+#automate discord bot to download picture from #memes channel from Tum Informatik discord
 #build login/auth system maybe using Google OAuth
 
 
