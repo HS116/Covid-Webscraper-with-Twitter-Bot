@@ -21,12 +21,12 @@ General process\
 3.) click on relevant element to sort the districts/cities of the state by alphabetical order\
 4.) scrape the relevant data from the particular district/city\
 5.) store this data in a dictionary\
-Returned the dictionary of total confirmed cases in respective function, and also returned daily change in cases for respective function\
+Returned the dictionary of total confirmed cases in respective function, and also returned daily change in cases for respective function
 
 ## 3.) Tweeting the result
 Retrieved my twitter developer keys/tokens from local JSON file (not on Github because of Gitignore)\
 Used Tweepy library and my keys/tokens to make it easier to create the "auth" using the OAuthHandler, set the access_token of auth, and finally create my API\
-Used the result dictionaries from above functions to output the relevant data in a tweet by updating status\
+Used the result dictionaries from above functions to output the relevant data in a tweet by updating status
 
 ## Extra
 Also used time decorators to measure the time taken for each particular data scraping function\
@@ -37,6 +37,6 @@ Applied some Python unit testing on 12th April 2022 for one of the data scraping
 https://twitter.com/LilRengsayeed
 
 ## Future plans for project:
-1.) Automate storing the data in a JSON or CSV/
-2.) Automate the bot running in the background, so I don't have to press run/
+1.) Automate storing the data in a JSON or CSV\
+2.) Automate the bot running in the background, so I don't have to press run\
 3.) Generate a plotly graph as well, and display this through the twitter update
