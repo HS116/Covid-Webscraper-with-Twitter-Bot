@@ -10,7 +10,7 @@ def get_indian_cities_covidcases_data():
     indian_cities_covidcases = {}
 
 
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome('/home/neilalb116/repos/Python-Files/Covid-Webscraper-with-Twitter-Bot/chromedriver')
 
     url = "https://www.incovid19.org/"
 
@@ -56,7 +56,7 @@ def get_indian_cities_covidcases_data():
 
 @timer_decorator
 def get_indian_cities_covid_change_data():
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome('/home/neilalb116/repos/Python-Files/Covid-Webscraper-with-Twitter-Bot/chromedriver')
 
     url = "https://www.incovid19.org/"
 
