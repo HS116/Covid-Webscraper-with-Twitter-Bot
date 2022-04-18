@@ -1,4 +1,4 @@
-# Scraping Coronavirus data using Beautiful Soup in Python and outputting country vs country comparisons using a Twitter API
+# Scraping various COVID-19 Data to create comparisons and tweeting the findings
 
 There are 3 components to this project:
 
