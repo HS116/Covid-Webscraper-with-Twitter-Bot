@@ -30,10 +30,8 @@ Used the result dictionaries from above functions to output the relevant data in
 
 ## Extra
 Also used time decorators to measure the time taken for each particular data scraping function\
-Applied some Python unit testing on 12th April 2022 for one of the data scraping functions\
+Applied some Python unit testing on 12th April 2022 for one of the data scraping functions
 
 
-
-
-## Image of tweeting result
-...
+## Bot in action
+https://twitter.com/LilRengsayeed
