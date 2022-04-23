@@ -37,7 +37,7 @@ Applied some Python unit testing on 12th April 2022 for one of the data scraping
 https://twitter.com/LilRengsayeed
 
 ## Future plans for project:
-1.) Write cleaner code e.g. break down the large functions into many smaller functions, maybe better variable/function names, reduce comments
+1.) Write cleaner code e.g. break down the large functions into many smaller functions, maybe better variable/function names, reduce comments\
 2.) Automate storing the data in a JSON or CSV\
 3.) Automate the bot running in the background, so I don't have to press run\
 4.) Generate a plotly graph as well, and display this through the twitter update
