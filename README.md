@@ -39,5 +39,5 @@ https://twitter.com/LilRengsayeed
 ## Future plans for project:
 1.) Write cleaner code e.g. break down the large functions into many smaller functions, maybe better variable/function names, reduce comments, add type annotations\
 2.) Automate storing the data in a JSON or CSV\
-3.) Automate the bot running in the background, so I don't have to press run\
+3.) Automate the bot running in the background, so I don't have to press run, by either using Windows task scheduler or something similar for Linux\
 4.) Generate a plotly graph as well, and display this through the twitter update
