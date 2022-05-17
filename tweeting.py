@@ -1,10 +1,7 @@
-from CountryCovidScraper import get_covid_data_from_worldometer as countryCovidData
-from indianCitiesCovidScraper import get_indian_cities_covidcases_data
-from indianCitiesCovidScraper import get_indian_cities_covid_change_data
-import json
 #Tweepy is like a python wrapper for the Twitter API
 #making it easier to interact w/ the Twitter API
 import tweepy
+import json
 
 def tweet(countryData, typeOfStat):
 
@@ -32,9 +29,3 @@ def tweet(countryData, typeOfStat):
 
     for country, data in countryData.items():
         api.update_status((f"{country} has {data} {typeOfStat}. Timestamp: {current_time}"))
-
-
-
-tweet(countryCovidData(), "total cases per 1M population")
-tweet(get_indian_cities_covidcases_data(), "total confirmed cases")
-tweet(get_indian_cities_covid_change_data(), "change in cases")
