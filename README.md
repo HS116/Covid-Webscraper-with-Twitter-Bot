@@ -12,7 +12,7 @@ Stored the information in a dictionary and returned this dictionary in the funct
 
 ## 2.) Selenium webscraper of indian city specific covid data
 Used Selenium and Chrome webdriver to obtain information from a dynamic website (https://www.incovid19.org/) about total confirmed cases and daily change in cases for the following cities/states:
-Chennai, Bangalore (Urban), Delhi, Mumbai\
+Chennai, Bangalore (Urban), Delhi\
 WARNING: The chromedriver on this repo is for Linux\
 Found all relevant elements to click and scrape data from using the full XPath \
 General process\
