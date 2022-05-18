@@ -37,21 +37,3 @@ def get_covid_data_from_worldometer():
     return countryData
 
 
-
-
-#TODO:Using Pandas/Matplotlib/Plotly to present the data
-
-#TODO: Store the data in a json/csv file
-
-#TODO: Create a website with frontend and backend which stores/presents university memes 
-# and people can like/comment on each meme
-#automate downdloading pictures from Zulip PGDP Meme channel
-#automate instagram bot to download pictures from insta tummemes
-#automate discord bot to download picture from #memes channel from Tum Informatik discord
-#build login/auth system maybe using Google OAuth
-
-
-
-
-
-
