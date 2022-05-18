@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from datetime import datetime
+
 
 def create_country_covid_graph(data):
     
@@ -12,7 +14,13 @@ def create_country_covid_graph(data):
 
     plt.bar(xAxis,yAxis, color='violet')
 
-    plt.show()
+    #plt.show()
+
+    #Add a time stamp
+    now = datetime.now()
+    timestamp = now.strftime("%d-%m-%Y_%H:%M:%S")
+
+    plt.savefig(f"covid_graph_images/Country_specific_total_covid_cases_per_1M_population/{timestamp}.png")
 
 def create_indian_cities_covidcases_graph(data):
     xAxis = [key for key, value in data.items()]
@@ -24,7 +32,14 @@ def create_indian_cities_covidcases_graph(data):
     plt.xlabel('Indian Cities')
     plt.ylabel('Total Confirmed Covid-19 cases')
 
-    plt.show()
+    #plt.show()
+
+    #Add timestamp
+    now = datetime.now()
+    timestamp = now.strftime("%d-%m-%Y_%H:%M:%S")
+
+    plt.savefig(f"covid_graph_images/Indian_city_specific_total_confirmed_cases/{timestamp}.png")
+
 
 def create_indian_cities_covid_change_graph(data):
     xAxis = [key for key, value in data.items()]
@@ -36,4 +51,11 @@ def create_indian_cities_covid_change_graph(data):
     plt.xlabel('Indian cities')
     plt.ylabel('Daily change in Covid-19 cases')
 
-    plt.show()
+    #plt.show()
+
+    #Add timestamp
+    now = datetime.now()
+    timestamp = now.strftime("%d-%m-%Y_%H:%M:%S")
+
+    plt.savefig(f"covid_graph_images/Indian_city_specific_daily_change_in_cases/{timestamp}.png")
+

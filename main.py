@@ -10,10 +10,12 @@ country_covid_data = get_country_covid_data()
 indian_cities_covidcases_data = get_indian_cities_covidcases_data()
 indian_cities_covid_change_data = get_indian_cities_covid_change_data()
 
-
+'''
 create_json_file(country_covid_data, "Country_specific_total_covid_cases_per_1M_population")
 create_json_file(indian_cities_covidcases_data, "Indian_city_specific_total_confirmed_cases")
 create_json_file(indian_cities_covid_change_data, "Indian_city_specific_daily_change_in_cases")
+'''
+
 
 #MUST make sure the values are integers, NOT strings, so it is plotted correctly
 create_country_covid_graph(convert_text_val_of_dict(country_covid_data))
