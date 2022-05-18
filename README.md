@@ -38,7 +38,7 @@ Similarly tweeted the matplotlib generated graph images by updating status.
 
 
 ## Extra
-Also used time decorators to measure the time taken for each particular data scraping function\
+Added decorators to measure the time taken for each particular data scraping function\
 Applied some Python unit testing on 12th April 2022 for one of the data scraping functions
 
 
