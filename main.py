@@ -5,7 +5,7 @@ from tweeting import tweet, tweetGraph
 from json_creation import create_json_file, convert_text_val_of_dict
 from create_graph import create_country_covid_graph, create_indian_cities_covid_change_graph, create_indian_cities_covidcases_graph
 
-print("Started")
+
 
 country_covid_data = get_country_covid_data()
 indian_cities_covidcases_data = get_indian_cities_covidcases_data()
