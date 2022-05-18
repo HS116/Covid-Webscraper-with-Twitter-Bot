@@ -23,10 +23,19 @@ General process\
 5.) store this data in a dictionary\
 Returned the dictionary of total confirmed cases in respective function, and also returned daily change in cases for respective function
 
-## 3.) Tweeting the result
+## 3.) Storing data in JSON files
+Since the values of the dictionaries were still strings, I had to first removed any special characters/punctuation such as commas or up arrows, and then convert the values to integer type. I achieved this by using a list comprehension of the items() of the original dictionary but with my changes, and then creating the new dictionary using dict(). Also used Python context managers during file handling, and json.dump() to "dump" the JSON object in the file. 
+
+## 4.) Created Graphs
+Used Matplotlib to make graphs, then saved them locally, and returned filepath of the graph image for future use. 
+
+
+## 5.) Tweeted results
 Retrieved my twitter developer keys/tokens from local JSON file (not on Github because of Gitignore)\
 Used Tweepy library and my keys/tokens to make it easier to create the "auth" using the OAuthHandler, set the access_token of auth, and finally create my API\
-Used the result dictionaries from above functions to output the relevant data in a tweet by updating status
+Used the result dictionaries from above web scraping functions to output the relevant data in a tweet by updating status.\
+Similarly tweeted the matplotlib generated graph images by updating status. 
+
 
 ## Extra
 Also used time decorators to measure the time taken for each particular data scraping function\
@@ -37,7 +46,6 @@ Applied some Python unit testing on 12th April 2022 for one of the data scraping
 https://twitter.com/CovidTracker22
 
 ## Future plans for project:
-1.) Write cleaner code e.g. break down the large functions into many smaller functions, maybe better variable/function names, reduce comments, add type annotations\
-2.) Automate storing the data in a JSON or CSV\
+1.) Add type annotations for better documentation\
+2.) Break down the large functions into many smaller functions and better variable/function names\
 3.) Automate the bot running in the background, so I don't have to press run, by either using Windows task scheduler or something similar for Linux\
-4.) Generate a plotly graph as well, and display this through the twitter update
