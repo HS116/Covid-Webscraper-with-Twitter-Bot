@@ -36,15 +36,6 @@ def get_indian_cities_covidcases_data():
     indian_cities_covidcases["Bangalore (Urban)"] = driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[24]/div[2]/div[2]').text
 
 
-    #Click on Maharastra 
-    driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[54]/div[1]').click()
-    #Click on the element to sort the districts by alphabetical order
-    driver.implicitly_wait(1)
-    driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[56]/div[1]').click()
-    driver.implicitly_wait(1)
-    #BUG w/ Mumbai covid cases
-    #indian_cities_covidcases["Mumbai"] = driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[41]/div[2]/div[2]').text
-
     #Scrape data directly from Delhi since it is a state
     indian_cities_covidcases["Delhi"] = driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[10]/div[2]/div[2]').text
 
@@ -82,16 +73,7 @@ def get_indian_cities_covid_change_data():
     driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[19]/div[1]').click()
     indian_cities_covid_change["Bangalore (Urban)"] = driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[24]/div[2]/div[1]').text
 
-
-    #Click on Maharastra 
-    driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[54]/div[1]').click()
-    #Click on the element to sort the districts by alphabetical order
-    driver.implicitly_wait(1)
-    driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[56]/div[1]').click()
-    driver.implicitly_wait(1)
-    indian_cities_covid_change["Mumbai"] = driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[73]/div[2]/div[1]').text
-
-    #Scrap data directly from Delhi since it is a state
+    #Scrape data directly from Delhi since it is a state
     indian_cities_covid_change["Delhi"] = driver.find_element_by_xpath('/html/body/div/div/div[3]/div[1]/div[4]/div[2]/div/div[10]/div[2]/div[1]').text
 
     driver.quit()

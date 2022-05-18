@@ -13,8 +13,8 @@ create_json_files(country_covid_data, indian_cities_covidcases_data, indian_citi
 
 
 
-
 tweet(country_covid_data, "total cases per 1M population")
 tweet(indian_cities_covidcases_data, "total confirmed cases")
 tweet(indian_cities_covid_change_data, "change in cases")
+
 
