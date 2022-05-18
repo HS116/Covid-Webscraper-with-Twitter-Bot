@@ -46,6 +46,7 @@ Applied some Python unit testing on 12th April 2022 for one of the data scraping
 
 
 ## Future plans for project:
-1.) Add type annotations for better documentation\
-2.) Break down the large functions into many smaller functions and better variable/function names\
-3.) Automate the bot running in the background, so I don't have to press run, by either using Windows task scheduler or something similar for Linux\
+1.) Deploy the python script using Cron on local Linux virtual machine or on the cloud using AWS Lambda, so I don't have to press run\
+2.) Add type annotations for better documentation\
+3.) Break down the large functions into many smaller functions and better variable/function names\
+
