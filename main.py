@@ -10,9 +10,9 @@ indian_cities_covidcases_data = get_indian_cities_covidcases_data()
 indian_cities_covid_change_data = get_indian_cities_covid_change_data()
 
 
-create_json_file(country_covid_data, "Country specific total covid cases per 1M population ")
-create_json_file(indian_cities_covidcases_data, "Indian city specific total confirmed cases ")
-create_json_file(indian_cities_covid_change_data, "Indian city specific daily change in cases ")
+create_json_file(country_covid_data, "Country_specific_total_covid_cases_per_1M_population")
+create_json_file(indian_cities_covidcases_data, "Indian_city_specific_total_confirmed_cases")
+create_json_file(indian_cities_covid_change_data, "Indian_city_specific_daily_change_in_cases")
 
 
 '''

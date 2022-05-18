@@ -4,18 +4,16 @@ import json
 #TODO: store the change in indian covid cities covid data in json file. 
 #Issue is that the up arrow is represented as "/u2191", and we need to remove that, could u lamda function for that
 
-def create_json_file(data, file_name):
+def create_json_file(data, folder):
 
     #Add a time stamp
     from datetime import datetime
     now = datetime.now()
-    timestamp = now.strftime("%d-%m-%Y %H:%M:%S")
+    timestamp = now.strftime("%d-%m-%Y_%H:%M:%S")
 
     data = convert_text_val_of_dict(data)
-    with open(f'jsonData/{file_name}_{timestamp}.json', 'w') as f:
+    with open(f'jsonCovidData/{folder}/{timestamp}.json', 'w') as f:
         json.dump(data, f, indent=4)
-
-    
     
 
 def convert_text_to_int(text):
