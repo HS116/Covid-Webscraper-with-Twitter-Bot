@@ -34,7 +34,7 @@ Applied some Python unit testing on 12th April 2022 for one of the data scraping
 
 
 ## Bot in action
-[https://twitter.com/LilRengsayeed](https://twitter.com/CovidTracker22)
+https://twitter.com/CovidTracker22
 
 ## Future plans for project:
 1.) Write cleaner code e.g. break down the large functions into many smaller functions, maybe better variable/function names, reduce comments, add type annotations\
