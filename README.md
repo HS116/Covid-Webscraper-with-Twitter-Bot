@@ -1,6 +1,9 @@
 # Scraping various COVID-19 Data to create comparisons and tweeting the findings
 
-There are 3 components to this project:
+## Bot in action
+https://twitter.com/CovidTracker22
+
+There are 5 components to this project:
 
 ## 1.) Beautiful soup webscraper of country specific covid data
 Used Beautiful Soup to obtain information from (https://www.worldometers.info/coronavirus/) about the "Total cases per 1M Population" for the following countries: Hong Kong, Germany, India, USA\
@@ -41,9 +44,6 @@ Similarly tweeted the matplotlib generated graph images by updating status.
 Added decorators to measure the time taken for each particular data scraping function\
 Applied some Python unit testing on 12th April 2022 for one of the data scraping functions
 
-
-## Bot in action
-https://twitter.com/CovidTracker22
 
 ## Future plans for project:
 1.) Add type annotations for better documentation\
